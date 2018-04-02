@@ -2,7 +2,8 @@
 
 // alert("JavaScript connection is good!")
 
-var searchSport = ["NBA", "Tennis", "NFL", "UNC"];
+var searchSport = ["NBA", "Women's Tennis", "Men's Tennis", "Nascar", "NFL", "Micheal Jordan", "Baseball", "NHL", "Men's College Basketball", "Women's College Basketball", "Women's Soccer",
+    "Men's Soccer", "College Football", "Wrestling", "Sumo Wrestling", "PGA"];
 
 
 function renderButtons() {
@@ -101,6 +102,24 @@ $("#add-sport").on("click", function (event) {
     return false
 });
 
-var image = ['https://media1.tenor.com/images/a968b96478a66d992add54cec040ebcc/tenor.gif?itemid=9762828'];
-$(".image-container").append(image);
-$(".image-container").css("background-image", "url('" + image + "')");
+// $(document).ready(function () {
+
+// Permanent Image Gif //
+
+    var image = ['https://media1.tenor.com/images/a968b96478a66d992add54cec040ebcc/tenor.gif?itemid=9762828'];
+    $(".image-container").append(image);
+    $(".image-container").css("background-image", "url('" + image + "')");
+
+
+    // Gets Link for Theme Song //
+    var audioElement = document.createElement("audio");
+    audioElement.setAttribute("src", "../images/Gettin Jiggy With It.mp3");
+
+    // Music Cotrols //
+    $("#musicControls").on("click", ".theme-button", function () {
+        audioElement.play();
+    }).on("click", ".pause-button", function () {
+        audioElement.pause();
+    });
+
+// });

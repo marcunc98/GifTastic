@@ -55,12 +55,12 @@ input [type="submit"] {
     font-size: 18px;
     margin: 0 10px 18px 0;
     cursor: pointer;
-    transition: box-shadow 1s;
+    transition: box-shadow 1s; transform: 2s;
 }
 
 button,
 input:hover {
     box-shadow: 2px 2px 3px red; 
-    transition: box-shadow 1s; 
+    transition: box-shadow 1s; transform: 2s; 
 }
 
